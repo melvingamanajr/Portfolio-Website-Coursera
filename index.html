@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo">DevPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="about-container">
+                <div class="about-text">
+                    <h1>Hi, I'm a Software Developer</h1>
+                    <p>Welcome to my professional portfolio website. I specialize in building robust, interactive, and highly responsive web applications using modern front-end technologies.</p>
+                </div>
+                <div class="about-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=400&h=400&fit=crop" 
+                         alt="Professional profile portrait of a software engineer working on a computer setup" 
+                         class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section gray-bg">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Inventory Tracker</h3>
+                    <p>A full-stack tracking system designed to monitor asset metrics and product stock variations safely.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Library Management Tool</h3>
+                    <p>An algorithmic portal built to handle user borrowing limit quotas and track real-time book check-in availability states.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Get In Touch</h2>
+            <div class="form-wrapper">
+                <form id="portfolio-contact-form">
+                    <div class="form-group">
+                        <label var="name">Full Name</label>
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label var="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label var="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+                <div id="form-alert" class="alert-box hidden"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Developer Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script href="script.js"></script>
+</body>
+</html>
